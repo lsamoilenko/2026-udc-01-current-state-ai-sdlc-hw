@@ -99,6 +99,11 @@ reviews:
 
   # ── Pre-merge checks (grading) ────────────────────────────────
   pre_merge_checks:
+    # Generic docstring-coverage gate is irrelevant for this docs + small-TSX
+    # homework — disable it so it doesn't add noise to every submission.
+    docstrings:
+      mode: "off"
+
     title:
       mode: "warning"
       requirements: >
