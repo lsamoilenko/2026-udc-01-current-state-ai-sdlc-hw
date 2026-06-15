@@ -1,0 +1,15 @@
+
+{
+  "permissions": {
+    "deny": [
+      "Write(node_modules/**)",
+      "Write(.next/**)",
+      "Write(dist/**)",
+      "Write(out/**)",
+      "Write(package-lock.json)",
+      "Write(yarn.lock)",
+      "Write(pnpm-lock.yaml)",
+      "Write(.env*)"
+    ]
+  }
+}
