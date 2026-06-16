@@ -2,14 +2,10 @@
 {
   "permissions": {
     "deny": [
-      "Write(node_modules/**)",
-      "Write(.next/**)",
-      "Write(dist/**)",
-      "Write(out/**)",
-      "Write(package-lock.json)",
-      "Write(yarn.lock)",
-      "Write(pnpm-lock.yaml)",
-      "Write(.env*)"
+      "**/node_modules/**",
+      "**/{.next,dist,build,coverage,.turbo}/**",
+      "**/{package-lock.json,yarn.lock,pnpm-lock.yaml,bun.lockb}",
+      "**/.env*"
     ]
   }
 }
